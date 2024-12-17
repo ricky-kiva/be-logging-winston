@@ -5,7 +5,7 @@ const { createLogger, format, transports } = require('winston');
 require('winston-daily-rotate-file');
 
 const transport = new transports.DailyRotateFile({
-  filename: path.join(__dirname, 'app-%DATE%.log'),
+  filename: path.join(__dirname, 'logs/app-%DATE%.log'),
   datePattern: 'YYYY-MM-DD-HH',
   zippedArchive: true,
   maxSize: '20m',
