@@ -1,5 +1,7 @@
-const notes = require('./notes');
+/* eslint-disable class-methods-use-this */
+
 const { nanoid } = require('nanoid');
+const notes = require('./notes');
 
 class NotesHandler {
   constructor() {
